@@ -1,169 +1,168 @@
 /* General Styles */
 
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.hide {
+  display: none;
+}
+
+/* Mobile Styles */
+
+/* Adjust the font size for smaller screens */
+html {
+  font-size: 14px;
+}
+
+/* Update the layout for small screens */
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
   }
-  
-  .hide {
-    display: none;
+
+  /* Center the add-new-client box */
+  #add-new-client-box {
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   }
-  
-  /* Mobile Styles */
-  
-  /* Adjust the font size for smaller screens */
+
+  /* Update the layout of the client details */
+  #client-details table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+
+  #client-details th,
+  #client-details td {
+    border: 1px solid #ccc;
+    padding: 8px;
+  }
+
+  /* Update the layout of the select payment type */
+  #select-option-box {
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+
+  /* Update the layout of the specific-amount-box */
+  #specific-amount-box form {
+    width: 100%;
+  }
+
+  #specific-amount-box label,
+  #no-payment-received label {
+    display: block;
+    margin-top: 10px;
+  }
+
+  /* Center the "Submit" button in the select-option-box */
+  #select-option-box button {
+    display: block;
+    margin: 20px auto;
+  }
+
+  /* Update the layout of the no-payment-received */
+  #no-payment-received {
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+
+  /* Center the "Add new client" button */
+  div > button {
+    display: block;
+    margin: 20px auto;
+    font-size: 24px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    width: 250px;
+    height: 30px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+
+  /* Style the "x" button in the add-new-client-box */
+  #exit-new-client-box {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: #888;
+  }
+}
+
+/* Styles for larger screens */
+
+/* Example: Tablet Landscape Styles */
+@media (min-width: 768px) and (max-width: 1024px) {
+  body {
+    padding: 20px;
+  }
+
+  /* Adjust the font size for tablets in landscape mode */
   html {
-    font-size: 14px;
+    font-size: 16px;
   }
-  
-  /* Update the layout for small screens */
-  @media (max-width: 768px) {
-    body {
-      padding: 10px;
-    }
-  
-    /* Center the add-new-client box */
-    #add-new-client-box {
-      max-width: 300px;
-      margin: 0 auto;
-      padding: 20px;
-      border: 1px solid #ccc;
-      border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    }
-  
-    /* Update the layout of the client details */
-    #client-details table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-top: 20px;
-    }
-  
-    #client-details th,
-    #client-details td {
-      border: 1px solid #ccc;
-      padding: 8px;
-    }
-  
-    /* Update the layout of the select payment type */
-    #select-option-box {
-      max-width: 300px;
-      margin: 0 auto;
-      padding: 20px;
-      border: 1px solid #ccc;
-      border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    }
-  
-    /* Update the layout of the specific-amount-box */
-    #specific-amount-box form {
-      width: 100%;
-    }
-  
-    #specific-amount-box label,
-    #no-payment-received label {
-      display: block;
-      margin-top: 10px;
-    }
-  
-    /* Center the "Submit" button in the select-option-box */
-    #select-option-box button {
-      display: block;
-      margin: 20px auto;
-    }
-  
-    /* Update the layout of the no-payment-received */
-    #no-payment-received {
-      max-width: 300px;
-      margin: 0 auto;
-      padding: 20px;
-      border: 1px solid #ccc;
-      border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    }
-  
-    /* Center the "Add new client" button */
-    div > button {
-      display: block;
-      margin: 20px auto;
-      font-size: 24px;
-      background-color: #4CAF50;
-      color: white;
-      border: none;
-      border-radius: 10px;
-      width: 250px;
-      height: 30px;
-      cursor: pointer;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    }
-  
-    /* Style the "x" button in the add-new-client-box */
-    #exit-new-client-box {
-      position: absolute;
-      top: 10px;
-      right: 10px;
-      background-color: transparent;
-      border: none;
-      font-size: 20px;
-      cursor: pointer;
-      color: #888;
-    }
+
+  /* Center the add-new-client box for tablets in landscape mode */
+  #add-new-client-box {
+    max-width: 600px;
   }
-  
-  /* Styles for larger screens */
-  
-  /* Example: Tablet Landscape Styles */
-  @media (min-width: 768px) and (max-width: 1024px) {
-    body {
-      padding: 20px;
-    }
-  
-    /* Adjust the font size for tablets in landscape mode */
-    html {
-      font-size: 16px;
-    }
-  
-    /* Center the add-new-client box for tablets in landscape mode */
-    #add-new-client-box {
-      max-width: 600px;
-    }
-  
-    /* Center the "Add new client" button for tablets in landscape mode */
-    div > button {
-      width: 300px;
-    }
-  
-    /* Update the layout of the client details for tablets in landscape mode */
-    #client-details table {
-      margin-top: 30px;
-    }
+
+  /* Center the "Add new client" button for tablets in landscape mode */
+  div > button {
+    width: 300px;
   }
-  
-  /* Example: Tablet Portrait Styles */
-  @media (min-width: 481px) and (max-width: 767px) {
-    body {
-      padding: 15px;
-    }
-  
-    /* Adjust the font size for tablets in portrait mode */
-    html {
-      font-size: 15px;
-    }
-  
-    /* Center the add-new-client box for tablets in portrait mode */
-    #add-new-client-box {
-      max-width: 400px;
-    }
-  
-    /* Center the "Add new client" button for tablets in portrait mode */
-    div > button {
-      width: 200px;
-    }
-  
-    /* Update the layout of the client details for tablets in portrait mode */
-    #client-details table {
-      margin-top: 25px;
-    }
+
+  /* Update the layout of the client details for tablets in landscape mode */
+  #client-details table {
+    margin-top: 30px;
   }
-  
+}
+
+/* Example: Tablet Portrait Styles */
+@media (min-width: 481px) and (max-width: 767px) {
+  body {
+    padding: 15px;
+  }
+
+  /* Adjust the font size for tablets in portrait mode */
+  html {
+    font-size: 15px;
+  }
+
+  /* Center the add-new-client box for tablets in portrait mode */
+  #add-new-client-box {
+    max-width: 400px;
+  }
+
+  /* Center the "Add new client" button for tablets in portrait mode */
+  div > button {
+    width: 200px;
+  }
+
+  /* Update the layout of the client details for tablets in portrait mode */
+  #client-details table {
+    margin-top: 25px;
+  }
+}
