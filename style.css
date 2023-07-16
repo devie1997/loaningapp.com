@@ -84,7 +84,7 @@ html {
   }
 
   /* Center the "Add new client" button */
-  div > button {
+  div > #submit-new-client {
     display: block;
     margin: 20px auto;
     font-size: 24px;
