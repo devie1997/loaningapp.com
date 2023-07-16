@@ -111,15 +111,59 @@ body {
     }
   }
   
-  /* Styles for larger screens can be added here using media queries if needed */
+  /* Styles for larger screens */
   
   /* Example: Tablet Landscape Styles */
   @media (min-width: 768px) and (max-width: 1024px) {
-    /* Add styles for tablets in landscape mode */
+    body {
+      padding: 20px;
+    }
+  
+    /* Adjust the font size for tablets in landscape mode */
+    html {
+      font-size: 16px;
+    }
+  
+    /* Center the add-new-client box for tablets in landscape mode */
+    #add-new-client-box {
+      max-width: 600px;
+    }
+  
+    /* Center the "Add new client" button for tablets in landscape mode */
+    div > button {
+      width: 300px;
+    }
+  
+    /* Update the layout of the client details for tablets in landscape mode */
+    #client-details table {
+      margin-top: 30px;
+    }
   }
   
   /* Example: Tablet Portrait Styles */
   @media (min-width: 481px) and (max-width: 767px) {
-    /* Add styles for tablets in portrait mode */
+    body {
+      padding: 15px;
+    }
+  
+    /* Adjust the font size for tablets in portrait mode */
+    html {
+      font-size: 15px;
+    }
+  
+    /* Center the add-new-client box for tablets in portrait mode */
+    #add-new-client-box {
+      max-width: 400px;
+    }
+  
+    /* Center the "Add new client" button for tablets in portrait mode */
+    div > button {
+      width: 200px;
+    }
+  
+    /* Update the layout of the client details for tablets in portrait mode */
+    #client-details table {
+      margin-top: 25px;
+    }
   }
   
