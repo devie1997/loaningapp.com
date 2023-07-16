@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Page title</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id ="add-new-client-box" class="hide">
+        <button id="exit-new-client-box">x</button>
+        <div>
+          <input type="text" id="client-name" required>
+          <label for="client-name">Name</label>
+        </div>
+        <div>
+          <input type="text" id="loan-amount" required pattern="[0-9]+">
+          <label for="loan-amount">Amount</label>
+        </div>
+        <div>
+          <input type="date" id="pay-date" required>
+          <label for="pay-date">Pay Date</label>
+        </div>
+        <div>
+          <button id="submit-new-client">Submit</button>
+        </div>
+    </div>
+    <div id="name-page"></div>
+    <div id="client-details" class="hide">
+      <div>
+        <table>
+          <thead></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+      <button id="update-client-info">Update client Info</button>
+      <button id="exit-table">Back</button>
+    </div>
+      <div id="payment-update" class="hide">
+      <select name="select-payment-type" id="select-payment-type">
+        <option value="select-payment-type">Select Payment Type</option>
+        <option value="full-loan">full loan</option>
+        <option value="interest-paid">Interest</option>
+        <option value="specific-amount">Specific Amount</option>
+        <option value="no-payment-received">No Payment Received</option>
+      </select>
+      </div>
+    <div class="hide" id="select-option-box">
+      <div id="full-loan" class="hide">
+        <h2>Loan paid in Full: <span id="total-loan-amount"></span></h2>
+      </div>
+      <div id="interest-paid" class="hide">
+        <p>the client Paid <span id="Interest-amount"></span></p><br>
+        <label for="reason-input">Reason</label>
+        <input type="text" id="reason-input">
+      </div>
+      <div id="specific-amount-box" class="hide">
+        <form>
+          <h1>How much has the <Span></Span> paid?</h1>
+          <div>
+            <label for="specific-amount-input">Amount</label>
+            <input type="number" id="specific-amount-input">
+          </div>
+          <div>
+            <label for="reason-for-specific-amount"></label>
+            <input type="text" id="reason-for-specific-amount">
+          </div>
+        </div>
+        <div id="no-payment-received" class="hide">
+          <h1>No payment received</h1>
+
+          <div>
+            <label for="reason-for-no-payment">Reason</label>
+            <input type="text" id="reason-for-no-payment">
+          </div>
+        </div>
+        <div>
+          <button id="submit-update">Submit</button>
+        </div>
+        </form>
+    </div>
+    <div>
+      <button id="add-new-client">+</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
